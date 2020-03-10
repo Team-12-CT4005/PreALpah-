@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3789117236828565607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3789117236828565609}
+  - component: {fileID: 3789117236828565608}
+  - component: {fileID: 3789117236828565610}
+  - component: {fileID: 3789117236828565611}
+  m_Layer: 0
+  m_Name: swarm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3789117236828565609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789117236828565607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -54.4, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3789117236828565608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789117236828565607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d06d10362785d4b9eded9743dafcf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minVelocity: 3
+  maxVelocity: 7.5
+  randomness: 1
+  flockSize: 100
+  footSoldier: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
+    type: 3}
+  bannerMan: {fileID: 3435298184462874181, guid: 9524799bca8514e4ab1c4c2b5dc34705,
+    type: 3}
+  shaman: {fileID: 955316553177155276, guid: 345a3e833fbadc64b82824783731e3ae, type: 3}
+  chase: {fileID: 9132392479081435059, guid: d5b4fd6f330d8624ea5b5d689740c585, type: 3}
+  red: {fileID: 2100000, guid: 85636faebb0456d488a14f4cc53c5b5c, type: 2}
+  blue: {fileID: 2100000, guid: d4bf7f70b552b4e45be33fb4e71e3ba0, type: 2}
+  green: {fileID: 2100000, guid: efb72f0a174d6294d8aec94e7f5d4c45, type: 2}
+  yellow: {fileID: 2100000, guid: 879f12b419fb41045b42d16a5d42614b, type: 2}
+  BannerMen: 3
+  Shamen: 1
+  swarmCenter: {x: 0, y: 0, z: 0}
+  swarmVelocity: {x: 0, y: 0, z: 0}
+--- !u!65 &3789117236828565610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789117236828565607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3789117236828565611
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789117236828565607}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
