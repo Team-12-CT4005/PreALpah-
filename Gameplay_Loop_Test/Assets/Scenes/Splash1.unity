@@ -254,8 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfb65b50a636e34292d789e21082979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
-  sceneName: 
+  transitionAnim: {fileID: 361791673}
+  sceneName: Main Menu
 --- !u!1 &361791671
 GameObject:
   m_ObjectHideFlags: 0

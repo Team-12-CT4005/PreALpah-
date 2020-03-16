@@ -7,7 +7,12 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool Paused = false;
     public GameObject menu;
+    public GameObject Quad;
     // Update is called once per frame
+    void Start()
+    {
+        Quad.SetActive(false);
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))// if the user presses the escape key
@@ -15,10 +20,12 @@ public class PauseMenu : MonoBehaviour
             if (Paused)
             {
                 Resume();// if the user is pause play the resum function
+                Quad.SetActive(false);
             }
             else
             {
                 Pause();// otherwise play the pause fucntion
+                Quad.SetActive(true);
             }
         }
     }
