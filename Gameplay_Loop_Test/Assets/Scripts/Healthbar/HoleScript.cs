@@ -32,7 +32,7 @@ public class HoleScript : MonoBehaviour
     }             
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Ball")
+        if(other.gameObject.tag == "Enemy")
         {
             hit = true;
         }
