@@ -7,11 +7,11 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool Paused = false;
     public GameObject menu;
-    public GameObject Quad;
+    public GameObject Hud;
     // Update is called once per frame
     void Start()
     {
-        Quad.SetActive(false);
+        Hud.SetActive(true);
     }
     void Update()
     {
@@ -20,12 +20,12 @@ public class PauseMenu : MonoBehaviour
             if (Paused)
             {
                 Resume();// if the user is pause play the resum function
-                Quad.SetActive(false);
+                Hud.SetActive(true);
             }
             else
             {
                 Pause();// otherwise play the pause fucntion
-                Quad.SetActive(true);
+                Hud.SetActive(false);
             }
         }
     }
