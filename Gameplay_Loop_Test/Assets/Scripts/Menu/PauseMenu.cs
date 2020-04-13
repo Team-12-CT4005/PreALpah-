@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PauseMenu : MonoBehaviour
 {
     public static bool Paused = false;
     public GameObject menu;
     public GameObject Hud;
+   
     // Update is called once per frame
     void Start()
     {
