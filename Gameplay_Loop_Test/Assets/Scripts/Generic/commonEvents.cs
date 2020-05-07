@@ -23,14 +23,14 @@ public class commonEvents : MonoBehaviour
     }
     public void lockPlayers()
     {
-        GameObject.Find("Player1").GetComponent<playerMovement>().enabled = false;
+        GameObject.Find("Player1").GetComponent<playerController>().enabled = false;
         //GameObject.Find("Player2").GetComponent<playerMovement>().enabled = false;
         //GameObject.Find("Player3").GetComponent<playerMovement>().enabled = false;
         //GameObject.Find("Player4").GetComponent<playerMovement>().enabled = false;
     }
     public void unlockPlayers()
     {
-        GameObject.Find("Player1").GetComponent<playerMovement>().enabled = true;
+        GameObject.Find("Player1").GetComponent<playerController>().enabled = true;
         //GameObject.Find("Player2").GetComponent<playerMovement>().enabled = true;
         //GameObject.Find("Player3").GetComponent<playerMovement>().enabled = true;
         //GameObject.Find("Player4").GetComponent<playerMovement>().enabled = true;

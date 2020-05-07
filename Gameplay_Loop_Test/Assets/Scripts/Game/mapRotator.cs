@@ -19,13 +19,13 @@ public class mapRotator : MonoBehaviour
     }
     public void lockCharacters()
     {
-        GameObject.Find("Player1").GetComponent<playerMovement>().enabled = false;
+        GameObject.Find("Player1").GetComponent<playerController>().enabled = false;
         GameObject.Find("Player1").GetComponent<Rigidbody>().useGravity = false;
         return;
     }
     public void unlockCharacters()
     {
-        GameObject.Find("Player1").GetComponent<playerMovement>().enabled = true;
+        GameObject.Find("Player1").GetComponent<playerController>().enabled = true;
         GameObject.Find("Player1").GetComponent<Rigidbody>().useGravity = true;
     }
     IEnumerator transition()
