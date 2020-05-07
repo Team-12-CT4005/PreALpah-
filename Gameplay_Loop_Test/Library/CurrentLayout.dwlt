@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 66
+  controlID: 72
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 15
+  controlID: 73
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 73
+  controlID: 74
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -498,23 +498,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e8e0ffff
-      m_LastClickedID: -7960
-      m_ExpandedIDs: 04c7ffff7cc8ffff7ccaffff66edffff1af6ffff8efbffff
+      m_SelectedIDs: 04d9ffff
+      m_LastClickedID: -9980
+      m_ExpandedIDs: 04d9ffff8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Box
-        m_OriginalName: Box
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -11612
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5314.707, y: 2171.9807, z: 61233.39}
+    m_Target: {x: 14113.789, y: 8353.687, z: 38073.723}
     speed: 2
-    m_Value: {x: -5314.707, y: 2171.9807, z: 61233.39}
+    m_Value: {x: 14113.789, y: 8353.687, z: 38073.723}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -591,13 +591,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.058688406, y: 0.73600227, z: -0.06449711, w: -0.6713965}
+    m_Target: {x: -0.060882863, y: -0.8110981, z: 0.085693754, w: -0.5754678}
     speed: 2
-    m_Value: {x: -0.058782827, y: 0.73496616, z: -0.06440654, w: -0.67247397}
+    m_Value: {x: -0.05867537, y: -0.82546866, z: 0.087214164, w: -0.554574}
   m_Size:
-    m_Target: 18886.299
+    m_Target: 17.020987
     speed: 2
-    m_Value: 18073.014
+    m_Value: 16.288025
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -686,20 +686,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/Textures/pit
+    - Assets/Materials/Textures/Stockade
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials/Textures/pit
+  - Assets/Materials/Textures/Stockade
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tooth\OneDrive\Desktop\PreALpah-\Gameplay_Loop_Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08760000
-    m_LastClickedID: 30216
-    m_ExpandedIDs: 000000009e2a0000b42a0000f02b0000b02f0000ba320000ee340000164e00001e62000000ca9a3b
+    m_SelectedIDs: 8a4e0000
+    m_LastClickedID: 20106
+    m_ExpandedIDs: 000000009e2a0000b42a0000042c0000d42f0000fa3200003835000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -727,7 +727,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e2a0000b42a0000f02b0000b02f0000ee340000
+    m_ExpandedIDs: 000000009e2a0000b42a0000042c0000d42f000038350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
