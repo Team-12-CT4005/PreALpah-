@@ -1,0 +1,42 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class playersData : MonoBehaviour
+{
+    public static int P1_Health = 10;
+    public static int P2_Health = 10;
+    public static int P3_Health = 10;
+    public static int P4_Health = 10;
+
+    public static Transform P1_Position;
+    public static Transform P2_Position;
+    public static Transform P3_Position;
+    public static Transform P4_Position;
+
+    public static int player_num;
+    private void Start()
+    {
+        Debug.Log(P1_Health);
+    }
+    public void storeHealth(int PlayerNum, int PlayerHealth)
+    {
+        if (PlayerNum == 1)
+        {
+            P1_Health = PlayerHealth;
+        }
+        if (PlayerNum == 2)
+        {
+            P2_Health = PlayerHealth;
+        }
+        if (PlayerNum == 3)
+        {
+            P3_Health = PlayerHealth;
+        }
+        if (PlayerNum == 4)
+        {
+            P4_Health = PlayerHealth;
+        }
+    }
+
+}

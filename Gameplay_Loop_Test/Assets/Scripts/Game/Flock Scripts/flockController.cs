@@ -49,12 +49,8 @@ public class flockController : MonoBehaviour
         flockSize = difficulty * 20;
         Shamen = difficulty - 1;
         BannerMen = difficulty;
-        Debug.Log(minVelocity);
-        Debug.Log(maxVelocity);
         maxVelocity = maxVelocity + (0.5f * BannerMen);
         minVelocity = minVelocity + (0.5f * BannerMen);
-        Debug.Log(minVelocity);
-        Debug.Log(maxVelocity);
         BannerMen = Random.Range(0, 4);
         Shamen = Random.Range(0, 2);
         boids = new GameObject[flockSize];

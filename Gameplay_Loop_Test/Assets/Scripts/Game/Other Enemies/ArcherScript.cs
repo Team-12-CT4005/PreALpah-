@@ -12,7 +12,6 @@ public class ArcherScript : MonoBehaviour
     {
         Transform player1 = GameObject.Find("Player1").GetComponent<Transform>();
         float playerDistance = Vector3.Distance(this.transform.position, GameObject.Find("Player1").GetComponent<Transform>().position);
-        Debug.Log(playerDistance);
         if(playerDistance < aggroDistance)
         {
             Vector3 playerXYLocation = new Vector3(player1.position.x, this.transform.position.y, player1.position.z);

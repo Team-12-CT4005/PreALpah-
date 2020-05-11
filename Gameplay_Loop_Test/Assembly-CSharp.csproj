@@ -72,10 +72,8 @@
     <Compile Include="Assets\Scripts\Game\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Game\Flock Scripts\flockBehavior.cs" />
     <Compile Include="Assets\Scripts\Game\Flock Scripts\flockController.cs" />
-    <Compile Include="Assets\Scripts\Game\laserScript.cs" />
     <Compile Include="Assets\Scripts\Game\mapRotator.cs" />
     <Compile Include="Assets\Scripts\Game\Other Enemies\ArcherScript.cs" />
-    <Compile Include="Assets\Scripts\Game\playerShoot.cs" />
     <Compile Include="Assets\Scripts\Generic\commonEvents.cs" />
     <Compile Include="Assets\Scripts\Generic\playerController.cs" />
     <Compile Include="Assets\Scripts\Generic\spawnPlayers.cs" />
@@ -90,6 +88,7 @@
     <Compile Include="Assets\Scripts\Menu\SplashSequence.cs" />
     <Compile Include="Assets\Scripts\player1Colour.cs" />
     <Compile Include="Assets\Scripts\playerColour.cs" />
+    <Compile Include="Assets\Scripts\playersData.cs" />
     <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
