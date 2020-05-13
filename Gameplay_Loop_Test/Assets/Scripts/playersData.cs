@@ -24,28 +24,24 @@ public class playersData : MonoBehaviour
         if (PlayerNum == 1)
         {
             P1_Health = PlayerHealth;
-            Debug.Log(P1_Health);
             Health Healthbar = GameObject.Find("YFill").GetComponent<Health>();
             Healthbar.SetHealth(P1_Health * 10);
         }
         if (PlayerNum == 2)
         {
             P2_Health = PlayerHealth;
-            Debug.Log(P1_Health);
             Health Healthbar = GameObject.Find("RFill").GetComponent<Health>();
             Healthbar.SetHealth(P1_Health * 10);
         }
         if (PlayerNum == 3)
         {
             P3_Health = PlayerHealth;
-            Debug.Log(P1_Health);
             Health Healthbar = GameObject.Find("BFill").GetComponent<Health>();
             Healthbar.SetHealth(P1_Health * 10);
         }
         if (PlayerNum == 4)
         {
             P4_Health = PlayerHealth;
-            Debug.Log(P1_Health);
             Health Healthbar = GameObject.Find("GFill").GetComponent<Health>();
             Healthbar.SetHealth(P1_Health * 10);
         }
