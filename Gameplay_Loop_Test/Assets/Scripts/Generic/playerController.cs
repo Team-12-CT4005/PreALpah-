@@ -42,7 +42,7 @@ public class playerController : MonoBehaviour
         transform.position += moveVector * speed;
         transform.LookAt(Target);
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.transform.tag == "enemy")
         {
