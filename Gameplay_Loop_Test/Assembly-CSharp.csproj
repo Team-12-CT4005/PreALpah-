@@ -69,6 +69,7 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
+    <Compile Include="Assets\Scripts\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\Game\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Game\Flock Scripts\flockBehavior.cs" />
     <Compile Include="Assets\Scripts\Game\Flock Scripts\flockController.cs" />
