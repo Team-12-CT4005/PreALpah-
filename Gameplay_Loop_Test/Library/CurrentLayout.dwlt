@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 101
+  controlID: 15
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 125
+  controlID: 100
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 126
+  controlID: 101
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,9 +383,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 72650000
+      m_SelectedIDs: 92660000
       m_LastClickedID: 0
-      m_ExpandedIDs: bcdeffff8efbffff
+      m_ExpandedIDs: 8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.808731, y: -2.1450367, z: -25.564884}
+    m_Target: {x: 0.18911143, y: -1.0190024, z: -24.83398}
     speed: 2
-    m_Value: {x: 4.808731, y: -2.1450367, z: -25.564884}
+    m_Value: {x: 0.18911143, y: -1.0190024, z: -24.83398}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -476,13 +476,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.1936326, y: -0.2939806, z: 0.06067293, w: -0.9341606}
+    m_Target: {x: -0.2219698, y: 0.004006849, z: -0.0011557791, w: -0.975176}
     speed: 2
-    m_Value: {x: -0.19351667, y: -0.29534382, z: 0.060955532, w: -0.93359935}
+    m_Value: {x: -0.22194432, y: -0.0018440083, z: 0.0001760301, w: -0.97505766}
   m_Size:
-    m_Target: 11.973891
+    m_Target: 11.820129
     speed: 2
-    m_Value: 11.458269
+    m_Value: 11.311129
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -703,20 +703,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Enviroment
+    - Assets/Prefabs/Weapons
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Enviroment
+  - Assets/Prefabs/Weapons
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tooth\OneDrive\Desktop\PreALpah-\Gameplay_Loop_Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 403}
-    m_SelectedIDs: ce2c0000
-    m_LastClickedID: 11470
-    m_ExpandedIDs: 00000000f02a0000082b00007c2d0000c82e000014310000283200007e3200008432000098370000d63700001c3d000000ca9a3b
+    scrollPos: {x: 0, y: 419}
+    m_SelectedIDs: fa320000
+    m_LastClickedID: 13050
+    m_ExpandedIDs: 00000000f22a00000a2b0000842d0000e22e0000662f0000443200009a320000a0320000b6370000f43700003a3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -744,7 +744,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f02a0000082b00007c2d0000c82e0000283200007e3200008432000098370000d63700001c3d0000
+    m_ExpandedIDs: 00000000f22a00000a2b0000842d0000e22e0000443200009a320000a0320000b6370000f43700003a3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
