@@ -4103,6 +4103,7 @@ GameObject:
   - component: {fileID: 167330518533362652}
   - component: {fileID: 3216478812522344867}
   - component: {fileID: 8170718532482521933}
+  - component: {fileID: 8688999173160908026}
   m_Layer: 0
   m_Name: Lumber_low
   m_TagString: Untagged
@@ -4169,6 +4170,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8688999173160908026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8024286005059902151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.030527, y: 12.404334, z: 3.3894951}
+  m_Center: {x: 3.0152636, y: 0.28023785, z: 1.3358123}
 --- !u!1 &8038258673277963273
 GameObject:
   m_ObjectHideFlags: 0

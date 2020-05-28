@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 15
+  controlID: 32
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 100
+  controlID: 33
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 101
+  controlID: 34
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,10 +382,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 92660000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff
+      scrollPos: {x: 0, y: 1473}
+      m_SelectedIDs: fe400000
+      m_LastClickedID: 16638
+      m_ExpandedIDs: 82fafeff52fefeff54fefeffbe72ffff08e3ffffc0e3ffffc4e3ffffd8e3ffffe2e3ffffe6e3ffff50e5ffff30e6ffff4ee6ffff6ae9fffff0e9ffffa8ecffffceecffffd2ecffffe8ecffffe2f0ffffeef0ffffbef3ffff36f4ffff66f7ffffe6f7ffff22fbffff8efbffff68420000ea4800006e490000f64a00008e510000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.18911143, y: -1.0190024, z: -24.83398}
+    m_Target: {x: 20.691534, y: -4.6583004, z: 14.873558}
     speed: 2
-    m_Value: {x: 0.18911143, y: -1.0190024, z: -24.83398}
+    m_Value: {x: 20.691534, y: -4.6583004, z: 14.873558}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -476,13 +476,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2219698, y: 0.004006849, z: -0.0011557791, w: -0.975176}
+    m_Target: {x: 0.11377384, y: 0.23473302, z: -0.027538233, w: 0.9651697}
     speed: 2
-    m_Value: {x: -0.22194432, y: -0.0018440083, z: 0.0001760301, w: -0.97505766}
+    m_Value: {x: 0.112265185, y: 0.23617992, z: -0.027349468, w: 0.96481484}
   m_Size:
-    m_Target: 11.820129
+    m_Target: 166.21815
     speed: 2
-    m_Value: 11.311129
+    m_Value: 174.05043
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -703,20 +703,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Weapons
+    - Assets/Prefabs/Enviroment
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Weapons
+  - Assets/Prefabs/Enviroment
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tooth\OneDrive\Desktop\PreALpah-\Gameplay_Loop_Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 419}
-    m_SelectedIDs: fa320000
-    m_LastClickedID: 13050
-    m_ExpandedIDs: 00000000f22a00000a2b0000842d0000e22e0000662f0000443200009a320000a0320000b6370000f43700003a3d000000ca9a3b
+    scrollPos: {x: 0, y: 359}
+    m_SelectedIDs: d82c0000
+    m_LastClickedID: 11480
+    m_ExpandedIDs: 00000000f42a00000c2b0000882d0000e82e00004a320000a0320000a63200002838000066380000b03d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -744,7 +744,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f22a00000a2b0000842d0000e22e0000443200009a320000a0320000b6370000f43700003a3d0000
+    m_ExpandedIDs: 00000000f42a00000c2b0000882d0000e82e00004a320000a0320000a63200002838000066380000b03d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
