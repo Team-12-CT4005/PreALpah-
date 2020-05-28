@@ -14,7 +14,7 @@ public class playerController : MonoBehaviour
 
     int PlayerHealth = 10;
     bool takeDamage = true;
-
+    public Animator Anim;
     public Transform Player;
     //The Transform of the player being controlled
     public Transform Target;
@@ -23,7 +23,10 @@ public class playerController : MonoBehaviour
     //CONTROLS
     //LEFT JOYSTICK TO MOVE
     //RIGHT JOYSTICK TO LOOK AROUND
-
+    private void Start()
+    {
+        Anim = GetComponentInChildren<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -41,6 +44,17 @@ public class playerController : MonoBehaviour
         moveVector.Normalize();
         transform.position += moveVector * speed;
         transform.LookAt(Target);
+        if(moveVector == Vector3.zero)
+        {
+            Anim.SetBool("IsRunning", false);
+            Debug.Log("Not Running");
+        }
+        else
+        {
+            Anim.SetBool("IsRunning", true);
+            Debug.Log("Running");
+            //Walk animation
+        }
     }
     private void OnCollisionStay(Collision collision)
     {
