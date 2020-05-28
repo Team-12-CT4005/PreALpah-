@@ -33,8 +33,8 @@ public class playerController : MonoBehaviour
         PlayerNumber.ToString();
         //Look
         Vector3 inputDirection = Vector3.zero;
-        inputDirection.x = Input.GetAxis("RightJoystickVertical" + PlayerNumber);
-        inputDirection.z = Input.GetAxis("RightJoystickHorizontal" + PlayerNumber);
+        inputDirection.x = Input.GetAxis("LeftJoystickVertical" + PlayerNumber);
+        inputDirection.z = Input.GetAxis("LeftJoystickHorizontal" + PlayerNumber);
         inputDirection.Normalize();
         Target.transform.position = Player.position + inputDirection;
         //Move
@@ -47,13 +47,20 @@ public class playerController : MonoBehaviour
         if(moveVector == Vector3.zero)
         {
             Anim.SetBool("IsRunning", false);
-            Debug.Log("Not Running");
         }
         else
         {
             Anim.SetBool("IsRunning", true);
-            Debug.Log("Running");
-            //Walk animation
+
+        }
+ 
+        if (Input.GetAxis("RightTrigger" + PlayerNumber) > 0)
+        {
+            Anim.SetBool("Attack", true);
+        }
+        else
+        {
+            Anim.SetBool("Attack", false);
         }
     }
     private void OnCollisionStay(Collision collision)

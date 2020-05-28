@@ -4,7 +4,7 @@ using System.Collections;
 public class flockController : MonoBehaviour
 {
     public float minVelocity = 5;
-    public float maxVelocity = 20;
+    public float maxVelocity = 12;
     public float randomness = 1;
     public int flockSize;
     public GameObject footSoldier;
@@ -68,17 +68,6 @@ public class flockController : MonoBehaviour
             boid.GetComponent<flockBehavior>().SetController(gameObject);
             Renderer[] children;
             children = boid.GetComponentsInChildren<Renderer>();
-            foreach (Renderer renderer in children)
-            {
-                var materials = new Material[renderer.materials.Length];
-                for (var j = 0; j < renderer.materials.Length; j++)
-                {
-                    materials[j] = colour;
-                }
-                renderer.materials = materials;
-            }
-            boid.GetComponent<MeshRenderer>().material = colour;
-            boid.GetComponentInChildren<MeshRenderer>().material = colour;
             boids[i] = boid;
             boid.name = "footSoldier " + i;
         }
@@ -96,17 +85,6 @@ public class flockController : MonoBehaviour
             boid.GetComponent<flockBehavior>().SetController(gameObject);
             Renderer[] children;
             children = boid.GetComponentsInChildren<Renderer>();
-            foreach (Renderer renderer in children)
-            {
-                var materials = new Material[renderer.materials.Length];
-                for (var j = 0; j < renderer.materials.Length; j++)
-                {
-                    materials[j] = colour;
-                }
-                renderer.materials = materials;
-            }
-            boid.GetComponent<MeshRenderer>().material = colour;
-            boid.GetComponentInChildren<MeshRenderer>().material = colour;
             boids[i] = boid;
             boid.name = "bannerMan " + i;
         }
@@ -124,17 +102,6 @@ public class flockController : MonoBehaviour
             boid.GetComponent<flockBehavior>().SetController(gameObject);
             Renderer[] children;
             children = boid.GetComponentsInChildren<Renderer>();
-            foreach (Renderer renderer in children)
-            {
-                var materials = new Material[renderer.materials.Length];
-                for (var j = 0; j < renderer.materials.Length; j++)
-                {
-                    materials[j] = colour;
-                }
-                renderer.materials = materials;
-            }
-            boid.GetComponent<MeshRenderer>().material = colour;
-            boid.GetComponentInChildren<MeshRenderer>().material = colour;
             boids[i] = boid;
             boid.name = "Shaman " + i;
         }

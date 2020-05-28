@@ -554,7 +554,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 5
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -562,7 +562,7 @@ InputManager:
     sensitivity: 0.5
     snap: 0
     invert: 0
-    type: 0
+    type: 2
     axis: 9
     joyNum: 1
   - serializedVersion: 3
