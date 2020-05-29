@@ -36,9 +36,11 @@ public class PauseMenu : MonoBehaviour
         menu.SetActive(false);// deactivates the pause menu
         Time.timeScale = 1f; // resumes normal time
         Paused = false; // sets pause to false
+        Hud.SetActive(true);
     }
     void Pause()
     {
+        Hud.SetActive(false);
         menu.SetActive(true); //activates the pause menu
         Time.timeScale = 0f; // freezes time
         Paused = true;// sets pause to true 
