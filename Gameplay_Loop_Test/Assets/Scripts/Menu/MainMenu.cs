@@ -13,4 +13,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);// increments the current scene index by one in this case going to the game start scene
     }
+    public void Menu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }

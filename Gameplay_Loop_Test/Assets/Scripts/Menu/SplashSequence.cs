@@ -19,6 +19,10 @@ public class SplashSequence : MonoBehaviour
         {
             counter = 12.0f;
         }
+        if (currentSceneName == "Splash1")
+        {
+            counter = 8.0f;
+        }
     }
 
     // Update is called once per frame
@@ -31,11 +35,12 @@ public class SplashSequence : MonoBehaviour
             StartCoroutine(LoadScene()); // start the animation co routine
             counter = 10.0f;
         }
+
     }
 
     IEnumerator LoadScene()
     {
-        transitionAnim.SetTrigger("end");//Activates the animation trigger end to play a new part of the animation
+        //transitionAnim.SetTrigger("end");//Activates the animation trigger end to play a new part of the animation
         yield return new WaitForSeconds(1f);// delays by 1secodn once the end animation is played
         SceneManager.LoadScene(nextSceneName);//Loads the next scene specified in the inspector
     }
