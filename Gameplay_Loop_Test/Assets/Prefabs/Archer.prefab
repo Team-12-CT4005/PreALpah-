@@ -600,7 +600,7 @@ PrefabInstance:
     - target: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
         type: 3}
       propertyPath: m_Name
-      value: Archer 3
+      value: Archer 0
       objectReference: {fileID: 0}
     - target: {fileID: 3163109579134834156, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
         type: 3}
