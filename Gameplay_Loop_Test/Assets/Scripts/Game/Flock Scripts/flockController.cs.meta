@@ -6,14 +6,10 @@ MonoImporter:
   defaultReferences:
   - footSoldier: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
       type: 3}
-  - bannerMan: {fileID: 3435298184462874181, guid: 9524799bca8514e4ab1c4c2b5dc34705,
+  - bannerMan: {fileID: 7717239671410557592, guid: 9524799bca8514e4ab1c4c2b5dc34705,
       type: 3}
   - shaman: {fileID: 955316553177155276, guid: 345a3e833fbadc64b82824783731e3ae, type: 3}
   - chase: {instanceID: 0}
-  - red: {instanceID: 0}
-  - blue: {instanceID: 0}
-  - green: {instanceID: 0}
-  - yellow: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

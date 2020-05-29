@@ -1,54 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class playersData : MonoBehaviour
+public class playersData
 {
-    public static int P1_Health = 10;
-    public static int P2_Health = 10;
-    public static int P3_Health = 10;
-    public static int P4_Health = 10;
+    public static int Health1 = 50;
+    public static int Health2 = 0;
+    public static int Health3 = 0;
+    public static int Health4 = 0;
+    public static Transform Position1;
+    public static Transform Position2;
+    public static Transform Position3;
+    public static Transform Position4;
 
-    public static Transform P1_Position;
-    public static Transform P2_Position;
-    public static Transform P3_Position;
-    public static Transform P4_Position;
+    public static bool playing1 = false;
+    public static bool playing2 = false;
+    public static bool playing3 = false;
+    public static bool playing4 = false;
 
     public static int player_num;
-    private void Start()
-    {
-        Debug.Log(P1_Health);
-    }
-    public void storeHealth(int PlayerNum, int PlayerHealth)
-    {
-        if (PlayerNum == 1)
-        {
-            P1_Health = PlayerHealth;
-            if (P1_Health < 0)
-            {
-                P1_Health = 0;
-            }
-            Health Healthbar = GameObject.Find("YFill").GetComponent<Health>();
-            Healthbar.SetHealth(P1_Health * 10);
-        }
-        if (PlayerNum == 2)
-        {
-            P2_Health = PlayerHealth;
-            Health Healthbar = GameObject.Find("RFill").GetComponent<Health>();
-            Healthbar.SetHealth(P1_Health * 10);
-        }
-        if (PlayerNum == 3)
-        {
-            P3_Health = PlayerHealth;
-            Health Healthbar = GameObject.Find("BFill").GetComponent<Health>();
-            Healthbar.SetHealth(P1_Health * 10);
-        }
-        if (PlayerNum == 4)
-        {
-            P4_Health = PlayerHealth;
-            Health Healthbar = GameObject.Find("GFill").GetComponent<Health>();
-            Healthbar.SetHealth(P1_Health * 10);
-        }
-    }
-
 }

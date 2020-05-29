@@ -23,14 +23,14 @@ public class commonEvents : MonoBehaviour
     }
     public void lockPlayers()
     {
-        GameObject.Find("Player1").GetComponent<playerController>().enabled = false;
+        GameObject.Find("Player1").GetComponent<playerController1>().enabled = false;
         //GameObject.Find("Player2").GetComponent<playerMovement>().enabled = false;
         //GameObject.Find("Player3").GetComponent<playerMovement>().enabled = false;
         //GameObject.Find("Player4").GetComponent<playerMovement>().enabled = false;
     }
     public void unlockPlayers()
     {
-        GameObject.Find("Player1").GetComponent<playerController>().enabled = true;
+        GameObject.Find("Player1").GetComponent<playerController1>().enabled = true;
         //GameObject.Find("Player2").GetComponent<playerMovement>().enabled = true;
         //GameObject.Find("Player3").GetComponent<playerMovement>().enabled = true;
         //GameObject.Find("Player4").GetComponent<playerMovement>().enabled = true;
@@ -57,15 +57,5 @@ public class commonEvents : MonoBehaviour
         GameObject.Find("P3").GetComponent<MeshRenderer>().enabled = true;
         GameObject.Find("P4").GetComponent<MeshRenderer>().enabled = true;
     }
-    public void initaliseLevel()
-    {
-        Debug.Log("initialise level fired");
-        lockPlayers();
-        hidePlayers();
-        hidePlayerNumbers();
-        centerPlayers();
-        showPlayers();
-        showPlayerNumbers();
-        unlockPlayers();
-    }
+
 }
