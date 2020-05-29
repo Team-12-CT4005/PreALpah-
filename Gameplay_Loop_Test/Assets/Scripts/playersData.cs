@@ -24,6 +24,10 @@ public class playersData : MonoBehaviour
         if (PlayerNum == 1)
         {
             P1_Health = PlayerHealth;
+            if (P1_Health < 0)
+            {
+                P1_Health = 0;
+            }
             Health Healthbar = GameObject.Find("YFill").GetComponent<Health>();
             Healthbar.SetHealth(P1_Health * 10);
         }

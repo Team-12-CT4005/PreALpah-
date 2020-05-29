@@ -3,6 +3,7 @@ using System.Collections;
 
 public class flockBehavior : MonoBehaviour
 {
+    private Animator Anim;
     private GameObject Controller;
     private bool inited = false;
     private float minVelocity;
@@ -12,11 +13,13 @@ public class flockBehavior : MonoBehaviour
 
     void Start()
     {
+        Anim = GetComponentInChildren<Animator>();
         StartCoroutine("BoidSteering");
     }
 
     IEnumerator BoidSteering()
     {
+        Anim.SetBool("ratRunning", true);
         while (true)
         {
             if (inited)
@@ -44,11 +47,11 @@ public class flockBehavior : MonoBehaviour
     {
         flockController boidController = Controller.GetComponent<flockController>();
         Vector3 flockCenter = boidController.swarmCenter;
-        Vector3 flockVelocity = boidController.swarmVelocity;
+        //Vector3 flockVelocity = boidController.swarmVelocity;
         Vector3 follow = chase.transform.position;
 
         flockCenter = flockCenter - transform.localPosition;
-        flockVelocity = flockVelocity - GetComponent<Rigidbody>().velocity;
+        //flockVelocity = flockVelocity - GetComponent<Rigidbody>().velocity;
         follow = follow - transform.position;
         if(Vector3.Distance(chase.transform.position, this.transform.position ) < 10)
         {
@@ -56,7 +59,7 @@ public class flockBehavior : MonoBehaviour
         }
         else
         {
-            return (flockCenter + flockVelocity + follow);
+            return (flockCenter  + follow); //+ veloc
         }
 
     }

@@ -11,11 +11,6 @@ public class flockController : MonoBehaviour
     public GameObject bannerMan;
     public GameObject shaman;
     public GameObject chase;
-    public Material red;
-    public Material blue;
-    public Material green;
-    public Material yellow;
-    private Material colour;
     public int difficulty;
 
     public int BannerMen;
@@ -27,30 +22,10 @@ public class flockController : MonoBehaviour
 
     void Start()
     {
-        int x = Random.Range(1, 5);
-        if(x == 1)
-        {
-            colour = red;
-
-        }
-        else if(x == 2)
-        {
-            colour = blue;
-        }
-        else if(x == 3)
-        {
-            colour = green;
-        }
-        else if(x == 4)
-        {
-            colour = yellow;
-        }
         chase = GameObject.Find("Player1");
         flockSize = difficulty * 20;
         Shamen = difficulty - 1;
         BannerMen = difficulty;
-        maxVelocity = maxVelocity + (0.5f * BannerMen);
-        minVelocity = minVelocity + (0.5f * BannerMen);
         BannerMen = Random.Range(0, 4);
         Shamen = Random.Range(0, 2);
         boids = new GameObject[flockSize];
