@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Lobby.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
@@ -70,7 +69,6 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
-    <Compile Include="Assets\Scripts\Disable.cs" />
     <Compile Include="Assets\Scripts\Game\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Game\Flock Scripts\flockBehavior.cs" />
     <Compile Include="Assets\Scripts\Game\Flock Scripts\flockController.cs" />
@@ -79,11 +77,13 @@
     <Compile Include="Assets\Scripts\Generic\commonEvents.cs" />
     <Compile Include="Assets\Scripts\Generic\playerController.cs" />
     <Compile Include="Assets\Scripts\Generic\spawnPlayers.cs" />
+    <Compile Include="Assets\Scripts\Healthbar\DamageScript.cs" />
     <Compile Include="Assets\Scripts\Healthbar\Health.cs" />
-    <Compile Include="Assets\Scripts\Healthbar\HoleScript.cs" />
     <Compile Include="Assets\Scripts\Lobby\gameStarter.cs" />
     <Compile Include="Assets\Scripts\Lobby\LightingEvent.cs" />
     <Compile Include="Assets\Scripts\Menu\DeathScreen.cs" />
+    <Compile Include="Assets\Scripts\Menu\Disable.cs" />
+    <Compile Include="Assets\Scripts\Menu\Lobby.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
