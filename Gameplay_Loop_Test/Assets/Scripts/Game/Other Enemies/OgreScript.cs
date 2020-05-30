@@ -5,9 +5,12 @@ using UnityEngine;
 public class OgreScript : MonoBehaviour
 {
     public Transform target;
+    int MinSpeed = 3;
     int MaxSpeed = 6;
     private Animator Anim;
     private IEnumerator coroutine;
+    private bool inited = true;
+    public bool SteeringLock = false;
     // Update is called once per frame
     private void Awake()
     {
@@ -29,15 +32,45 @@ public class OgreScript : MonoBehaviour
                 return;
             }
         }
-        coroutine = Steering(nearestPlayer);
-        StartCoroutine(coroutine);
+        if(SteeringLock == false)
+        {
+            SteeringLock = true;
+            coroutine = Steering(nearestPlayer);
+            StartCoroutine(coroutine);
+        }
+
+        if (GetComponent<Rigidbody>().velocity.magnitude > 0)
+        {
+            Anim.SetBool("ogreRunning", true);
+        }
+        else
+        {
+            Anim.SetBool("ogreRunning", false);
+        }
     }
 
     IEnumerator Steering(Transform target)
     {
-        Calc(target);
+        
+        while (true)
+        {
+            if (inited)
+            {
+                GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Calc(target) * 3 * Time.deltaTime;
+                transform.LookAt(new Vector3(target.transform.position.x, this.transform.position.y, target.transform.position.z));
+                if (GetComponent<Rigidbody>().velocity.magnitude > MaxSpeed)
+                {
+                    GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * MaxSpeed;
+                }
+                if (GetComponent<Rigidbody>().velocity.magnitude < MinSpeed)
+                {
+                    GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * MinSpeed;
+                }
+            }
+            yield return new WaitForSeconds(0.01f);
+        }
     }
-    private void Calc (Transform nearestPlayer)
+    private Vector3 Calc (Transform nearestPlayer)
     {
         Vector3 follow = nearestPlayer.position - transform.position;
         if(Vector3.Distance(nearestPlayer.position, this.transform.position) < 10)

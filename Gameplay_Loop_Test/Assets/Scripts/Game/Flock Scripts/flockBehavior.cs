@@ -14,12 +14,9 @@ public class flockBehavior : MonoBehaviour
     void Start()
     {
         Anim = GetComponentInChildren<Animator>();
-        StartCoroutine("BoidSteering");
     }
-
     IEnumerator BoidSteering()
     {
-        Anim.SetBool("ratRunning", true);
         while (true)
         {
             if (inited)
@@ -32,14 +29,16 @@ public class flockBehavior : MonoBehaviour
                 if (speed > maxVelocity)
                 {
                     GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * maxVelocity;
+                    Anim.SetBool("ratRunning", true);
                 }
                 else if (speed < minVelocity)
                 {
                     GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * minVelocity;
+                    Anim.SetBool("ratRunning", false);
                 }
             }
 
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
