@@ -48,12 +48,7 @@ PrefabInstance:
     - target: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
         type: 3}
       propertyPath: m_Name
-      value: Archer
-      objectReference: {fileID: 0}
-    - target: {fileID: 3163109579134834156, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 94
+      value: Archer 0
       objectReference: {fileID: 0}
     - target: {fileID: 8865138206095730844, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
         type: 3}
@@ -109,6 +104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163109579134834156, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 94
       objectReference: {fileID: 0}
     - target: {fileID: 6048542738079330175, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
         type: 3}
