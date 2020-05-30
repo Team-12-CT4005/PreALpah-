@@ -4,11 +4,11 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - footSoldier: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f,
+  - rat: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f, type: 3}
+  - flagVarient: {fileID: 5405653361921697093, guid: 63508c6092aff0240af946f699eae6d5,
       type: 3}
-  - bannerMan: {fileID: 7717239671410557592, guid: 9524799bca8514e4ab1c4c2b5dc34705,
+  - shamanVarient: {fileID: 955316553177155276, guid: 345a3e833fbadc64b82824783731e3ae,
       type: 3}
-  - shaman: {fileID: 955316553177155276, guid: 345a3e833fbadc64b82824783731e3ae, type: 3}
   - chase: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

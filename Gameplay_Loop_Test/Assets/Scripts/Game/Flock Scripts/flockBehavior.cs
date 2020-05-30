@@ -55,7 +55,7 @@ public class flockBehavior : MonoBehaviour
         follow = follow - transform.position;
         if(Vector3.Distance(chase.transform.position, this.transform.position ) < 10)
         {
-            return (follow * 6);
+            return (follow * 10);
         }
         else
         {

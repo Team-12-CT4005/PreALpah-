@@ -19,7 +19,7 @@ public class playerController1 : MonoBehaviour
     //The Transform of the player being controlled
     public Transform Target;
     //The Target is an invisible object at which the player looks at.
-
+    public bool isAttacking = false;
     //CONTROLS
     //LEFT JOYSTICK TO MOVE
     //RIGHT JOYSTICK TO LOOK AROUND
@@ -56,11 +56,7 @@ public class playerController1 : MonoBehaviour
  
         if (Input.GetAxis("RightTrigger" + PlayerNumber) > 0)
         {
-            Anim.SetBool("Attack", true);
-        }
-        else
-        {
-            Anim.SetBool("Attack", false);
+            StartCoroutine("Attack");
         }
     }
     private void OnCollisionStay(Collision collision)
@@ -92,6 +88,23 @@ public class playerController1 : MonoBehaviour
         takeDamage = false;
         yield return new WaitForSeconds(0.3f);
         takeDamage = true;
+    }
+    IEnumerator Attack()
+    {
+        if(isAttacking == true)
+        {
+            yield return null;
+        }
+        if(isAttacking == false)
+        {
+            isAttacking = true;
+            Anim.SetBool("Attack", true);
+            yield return new WaitForSeconds(1.2f);
+            Anim.SetBool("Attack", false);
+            isAttacking = false;
+
+        }
+
     }
     private void damageRecoil(Transform enemyTransform)
     {
