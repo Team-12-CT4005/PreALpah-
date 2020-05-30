@@ -48,15 +48,6 @@ public class HoleScript : MonoBehaviour
             Damage(10);
             hit = false;               
         }
-       // if (ricoshet == true)
-       // {
-       //     timer -= Time.deltaTime;
-       // }
-        //if (timer <= 0)
-        //{
-       //     ricoshet = false;
-       //     timer = 2.0f;
-       // }
 
     }
     void Damage(int damage)

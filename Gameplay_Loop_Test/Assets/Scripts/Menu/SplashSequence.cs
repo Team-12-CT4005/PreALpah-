@@ -40,7 +40,6 @@ public class SplashSequence : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        //transitionAnim.SetTrigger("end");//Activates the animation trigger end to play a new part of the animation
         yield return new WaitForSeconds(1f);// delays by 1secodn once the end animation is played
         SceneManager.LoadScene(nextSceneName);//Loads the next scene specified in the inspector
     }
