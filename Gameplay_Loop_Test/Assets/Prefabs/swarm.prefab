@@ -49,18 +49,14 @@ MonoBehaviour:
   maxVelocity: 7.5
   randomness: 1
   flockSize: 100
-  rat: {fileID: 9019413857118324375, guid: 49119b86b7886fa45b7a9af8bcb17b0f, type: 3}
-  flagVarient: {fileID: 5405653361921697093, guid: 63508c6092aff0240af946f699eae6d5,
-    type: 3}
-  shamanVarient: {fileID: 955316553177155276, guid: 345a3e833fbadc64b82824783731e3ae,
+  rat: {fileID: 1814624641776023995, guid: 99ae144d460671448a1ef2cff5fc1783, type: 3}
+  flagVarient: {fileID: 8523288840729727092, guid: 5ad05e15008f83b44aa1148c76e1d802,
     type: 3}
   chase: {fileID: 9132392479081435059, guid: d5b4fd6f330d8624ea5b5d689740c585, type: 3}
   difficulty: 0
   Flags: 0
-  Shamen: 1
   Rats: 0
   swarmCenter: {x: 0, y: 0, z: 0}
-  swarmVelocity: {x: 0, y: 0, z: 0}
 --- !u!65 &3789117236828565610
 BoxCollider:
   m_ObjectHideFlags: 0

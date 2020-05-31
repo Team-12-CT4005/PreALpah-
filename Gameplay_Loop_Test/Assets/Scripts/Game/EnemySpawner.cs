@@ -9,7 +9,8 @@ public class EnemySpawner : MonoBehaviour
 
     public int swarmNumber;
     public int archerNumber;
-
+    public int ogreNumber;
+    public static int enemyNumber = 0;
     public GameObject swarm;
     public GameObject archer;
 
@@ -17,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     {
         swarmNumber = Difficulty;
         archerNumber = Difficulty - 1;
+        ogreNumber = Difficulty - 2;
     }
     private void Start()
     {
@@ -32,6 +34,7 @@ public class EnemySpawner : MonoBehaviour
             GameObject Archer = Instantiate(archer, new Vector3(10, 1, 0), Quaternion.identity);
 
             archer.name = "Archer " + i;
+            enemyNumber++;
         }
     }
 }

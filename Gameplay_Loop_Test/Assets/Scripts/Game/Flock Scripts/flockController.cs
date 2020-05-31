@@ -17,7 +17,6 @@ public class flockController : MonoBehaviour
     public int Flags;
     public int Rats;
     public Vector3 swarmCenter;
-    //public Vector3 swarmVelocity;
 
     private GameObject[] boids;
 
@@ -42,6 +41,7 @@ public class flockController : MonoBehaviour
             boid.GetComponent<flockBehavior>().SetController(gameObject);
             boids[i] = boid;
             boid.name = "footSoldier " + i;
+            EnemySpawner.enemyNumber++;
         }
         for (var i = 0; i < Flags; i++)
         {
@@ -57,6 +57,7 @@ public class flockController : MonoBehaviour
             boid.GetComponent<flockBehavior>().SetController(gameObject);
             boids[i] = boid;
             boid.name = "bannerMan " + i;
+            EnemySpawner.enemyNumber++;
         }
     }
 }

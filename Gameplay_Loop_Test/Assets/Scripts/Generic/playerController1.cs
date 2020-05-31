@@ -68,11 +68,13 @@ public class playerController1 : MonoBehaviour
                 StartCoroutine("damageCooldown");
                 damageRecoil(collision.transform);
                 StartCoroutine("damageCooldown");
-                PlayerHealth--;
+                int damageMultiplier = Mathf.RoundToInt(collision.rigidbody.mass);
+                PlayerHealth = PlayerHealth - (1 * damageMultiplier);
                 if (PlayerHealth < 0)
                 {
                     PlayerHealth = 0;
                 }
+                
                 playersData.Health1 = PlayerHealth;
                 Health Healthbar = GameObject.Find("Fill" + PlayerNumber).GetComponent<Health>();
                 Healthbar.SetHealth(playersData.Health1 * 2);
@@ -86,23 +88,26 @@ public class playerController1 : MonoBehaviour
     IEnumerator damageCooldown()
     {
         takeDamage = false;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.15f);
         takeDamage = true;
     }
     IEnumerator Attack()
     {
         if(isAttacking == true)
         {
+
             yield return null;
         }
         if(isAttacking == false)
         {
+
             isAttacking = true;
             Anim.SetBool("Attack", true);
-            yield return new WaitForSeconds(1.2f);
+            this.GetComponent<BoxCollider>().enabled = true;
+            yield return new WaitForSeconds(0.6f);
             Anim.SetBool("Attack", false);
             isAttacking = false;
-
+            this.GetComponent<BoxCollider>().enabled = false;
         }
 
     }

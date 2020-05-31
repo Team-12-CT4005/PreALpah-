@@ -19,7 +19,7 @@ public class flockBehavior : MonoBehaviour
 
     IEnumerator BoidSteering()
     {
-        Anim.SetBool("ratRunning", true);
+        Anim.SetBool("isRunning", true);
         while (true)
         {
             if (inited)
@@ -40,6 +40,13 @@ public class flockBehavior : MonoBehaviour
             }
 
             yield return new WaitForSeconds(0.1f);
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            Destroy(this.gameObject);
         }
     }
 
