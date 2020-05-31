@@ -43,7 +43,16 @@ public class OgreScript : MonoBehaviour
             StartCoroutine(coroutine);
         }
     }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            EnemySpawner.enemyNumber--;
+            Debug.Log(EnemySpawner.enemyNumber);
+            Destroy(this.gameObject);
 
+        }
+    }
     IEnumerator Steering(Transform target)
     {
 

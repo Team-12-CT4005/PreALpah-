@@ -46,6 +46,8 @@ public class flockBehavior : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            EnemySpawner.enemyNumber--;
+            Debug.Log(EnemySpawner.enemyNumber);
             Destroy(this.gameObject);
         }
     }
