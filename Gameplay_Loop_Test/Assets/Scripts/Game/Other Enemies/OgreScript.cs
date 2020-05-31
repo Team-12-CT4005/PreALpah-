@@ -59,7 +59,6 @@ public class OgreScript : MonoBehaviour
                 {
                     GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Calc(target) * Time.deltaTime;
                 }
-                Debug.Log(GetComponent<Rigidbody>().velocity.magnitude);
                 transform.LookAt(new Vector3(target.transform.position.x, this.transform.position.y, target.transform.position.z));
                 if(GetComponent<Rigidbody>().velocity.magnitude > MaxSpeed){
                     GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * MaxSpeed;

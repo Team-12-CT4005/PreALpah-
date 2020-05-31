@@ -104,10 +104,12 @@ public class playerController1 : MonoBehaviour
             isAttacking = true;
             Anim.SetBool("Attack", true);
             this.GetComponent<BoxCollider>().enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            this.GetComponent<BoxCollider>().enabled = false;
             yield return new WaitForSeconds(0.6f);
             Anim.SetBool("Attack", false);
             isAttacking = false;
-            this.GetComponent<BoxCollider>().enabled = false;
+
         }
 
     }

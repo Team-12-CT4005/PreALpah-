@@ -19,7 +19,7 @@ public class flockBehavior : MonoBehaviour
 
     IEnumerator BoidSteering()
     {
-        Anim.SetBool("isRunning", true);
+        Anim.SetBool("IsRunning", true);
         while (true)
         {
             if (inited)
